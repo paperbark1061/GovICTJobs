@@ -110,7 +110,7 @@ struct JobFilters {
             let searchLower = searchText.lowercased()
             if !opportunity.title.lowercased().contains(searchLower) &&
                 !opportunity.buyer.lowercased().contains(searchLower) &&
-                !opportunity.category.lowercased().contains(searchLower) {
+                !opportunity.module.lowercased().contains(searchLower) {
                 return false
             }
         }
