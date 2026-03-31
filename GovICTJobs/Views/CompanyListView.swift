@@ -6,7 +6,11 @@ struct CompanyListView: View {
 
     var filteredCompanies: [Company] {
         let advertisingCompanies = dataService.getAdvertisingCompanies()
-        if searchText.isEmpty { return advertisingCompanies }
+
+        if searchText.isEmpty {
+            return advertisingCompanies
+        }
+
         let searchLower = searchText.lowercased()
         return advertisingCompanies.filter { company in
             company.name.lowercased().contains(searchLower) ||
@@ -22,8 +26,10 @@ struct CompanyListView: View {
                         Image(systemName: "building.2")
                             .font(.system(size: 48))
                             .foregroundColor(.gray)
+
                         Text(searchText.isEmpty ? "No Companies Advertising" : "No Results Found")
                             .font(.headline)
+
                         if searchText.isEmpty {
                             Text("Companies that are actively advertising ICT roles will appear here.")
                                 .font(.subheadline)
@@ -43,7 +49,7 @@ struct CompanyListView: View {
                 }
             }
             .searchable(text: $searchText, prompt: "Search companies")
-            .navigationTitle("Companies")
+            .navigationTitle("Companies (\(filteredCompanies.count))")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
@@ -58,6 +64,7 @@ struct CompanyListRow: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(company.name)
                         .font(.headline)
+
                     if !company.advertisingRoles.isEmpty {
                         Text(company.advertisingRoles.prefix(3).joined(separator: ", "))
                             .font(.caption)
@@ -65,13 +72,18 @@ struct CompanyListRow: View {
                             .lineLimit(1)
                     }
                 }
+
                 Spacer()
-                if company.isAdvertising {
-                    Label("Active", systemImage: "checkmark.circle.fill")
-                        .font(.caption2)
-                        .foregroundColor(.green)
+
+                VStack(alignment: .trailing, spacing: 4) {
+                    if company.isAdvertising {
+                        Label("Active", systemImage: "checkmark.circle.fill")
+                            .font(.caption2)
+                            .foregroundColor(.green)
+                    }
                 }
             }
+
             if !company.platforms.isEmpty {
                 HStack(spacing: 4) {
                     ForEach(company.platforms.prefix(3), id: \.self) { platform in
@@ -83,12 +95,37 @@ struct CompanyListRow: View {
                             .foregroundColor(.blue)
                             .cornerRadius(4)
                     }
+
                     if company.platforms.count > 3 {
                         Text("+\(company.platforms.count - 3) more")
                             .font(.caption2)
                             .foregroundColor(.secondary)
                     }
+
                     Spacer()
+                }
+            }
+
+            HStack(spacing: 12) {
+                if let urlString = company.websiteURL, let url = URL(string: urlString) {
+                    Link(destination: url) {
+                        Label("Website", systemImage: "globe")
+                            .font(.caption)
+                    }
+                }
+
+                if let urlString = company.jobsURL, let url = URL(string: urlString) {
+                    Link(destination: url) {
+                        Label("Jobs", systemImage: "briefcase")
+                            .font(.caption)
+                    }
+                }
+
+                if let urlString = company.buyictURL, let url = URL(string: urlString) {
+                    Link(destination: url) {
+                        Label("BuyICT", systemImage: "building.columns")
+                            .font(.caption)
+                    }
                 }
             }
         }
