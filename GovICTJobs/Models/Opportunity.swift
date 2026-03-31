@@ -10,10 +10,11 @@ struct Opportunity: Identifiable, Codable {
     let module: String
     let category: String
     let matchingCompanyIds: [String]
+    let buyictURL: String?
 
     enum CodingKeys: String, CodingKey {
         case id, title, buyer, arrangement, location, closing, module, category
-        case matchingCompanyIds = "matchingCompanyIds"
+        case matchingCompanyIds, buyictURL
     }
 
     var skills: [String] {

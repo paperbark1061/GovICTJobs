@@ -7,8 +7,10 @@ struct Company: Identifiable, Codable {
     let advertisingRoles: [String]
     let platforms: [String]
     let websiteURL: String?
+    let jobsURL: String?
+    let buyictURL: String?
 
     enum CodingKeys: String, CodingKey {
-        case id, name, isAdvertising, advertisingRoles, platforms, websiteURL
+        case id, name, isAdvertising, advertisingRoles, platforms, websiteURL, jobsURL, buyictURL
     }
 }
