@@ -53,5 +53,38 @@
     "module": "ICT Labour Hire",
     "category": "",
     "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
+  },
+  {
+    "title": "MST26-007-Enterprise Assurance Model",
+    "id": "PCS-03702",
+    "buyer": "Services Australia",
+    "arrangement": "Hybrid",
+    "location": "QLD, ACT, VIC",
+    "closing": "15 April 2026",
+    "module": "Professional and Consulting Services",
+    "category": "",
+    "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
+  },
+  {
+    "title": "1 Testing Enterprise Architect",
+    "id": "LH-06069",
+    "buyer": "Australian Digital Health Agency",
+    "arrangement": "Hybrid",
+    "location": "QLD, ACT, NSW",
+    "closing": "8 April 2026",
+    "module": "ICT Labour Hire",
+    "category": "",
+    "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
+  },
+  {
+    "title": "1 Digital Content Manager",
+    "id": "LH-05965",
+    "buyer": "Department of Health, Disability and Ageing",
+    "arrangement": "Remote",
+    "location": "",
+    "closing": "7 April 2026",
+    "module": "ICT Labour Hire",
+    "category": "",
+    "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
   }
 ]
