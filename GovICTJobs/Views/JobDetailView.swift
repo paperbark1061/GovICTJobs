@@ -48,7 +48,7 @@ struct JobDetailView: View {
                 .background(Color(.systemGray6))
                 .cornerRadius(12)
 
-                if let urlString = opportunity.buyictURL, let url = URL(string: urlString) {
+                if let url = URL(string: opportunity.effectiveBuyictURL) {
                     Link(destination: url) {
                         HStack {
                             Image(systemName: "globe")
@@ -292,7 +292,6 @@ struct FlowLayout: Layout {
         closing: "2026-04-30",
         module: "ICT Labour Hire",
         category: "Development",
-        matchingCompanyIds: ["comp1", "comp2"],
         buyictURL: "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=abc123&entry=opp_page"
     )
 
