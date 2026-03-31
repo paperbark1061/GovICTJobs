@@ -38,8 +38,6 @@ struct JobDetailView: View {
                     Divider()
                     DetailRow(label: "Location", value: opportunity.location)
                     Divider()
-                    DetailRow(label: "Category", value: opportunity.category)
-                    Divider()
                     DetailRow(label: "Module", value: opportunity.module)
                     Divider()
                     DetailRow(label: "Closing Date", value: opportunity.closing)
@@ -291,8 +289,7 @@ struct FlowLayout: Layout {
         location: "ACT",
         closing: "2026-04-30",
         module: "ICT Labour Hire",
-        category: "Development",
-        buyictURL: "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=abc123&entry=opp_page"
+        sysId: "abc123def456"
     )
 
     return NavigationStack {
