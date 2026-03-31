@@ -24,7 +24,7 @@ class DataService: ObservableObject {
 
         DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 0.5) {
             do {
-                // Load opportunities from two files
+                // Load opportunities from three files
                 guard let oppsURL = Bundle.main.url(forResource: "opportunities", withExtension: "json") else {
                     throw DataLoadError.fileNotFound("opportunities.json")
                 }
@@ -35,6 +35,11 @@ class DataService: ObservableObject {
                 }
                 let opps2Data = try Data(contentsOf: opps2URL)
 
+                guard let opps3URL = Bundle.main.url(forResource: "opportunities3", withExtension: "json") else {
+                    throw DataLoadError.fileNotFound("opportunities3.json")
+                }
+                let opps3Data = try Data(contentsOf: opps3URL)
+
                 // Load companies
                 guard let companiesURL = Bundle.main.url(forResource: "companies", withExtension: "json") else {
                     throw DataLoadError.fileNotFound("companies.json")
@@ -44,7 +49,8 @@ class DataService: ObservableObject {
                 let decoder = JSONDecoder()
                 let opps1 = try decoder.decode([Opportunity].self, from: oppsData)
                 let opps2 = try decoder.decode([Opportunity].self, from: opps2Data)
-                let loadedOpps = opps1 + opps2
+                let opps3 = try decoder.decode([Opportunity].self, from: opps3Data)
+                let loadedOpps = opps1 + opps2 + opps3
                 let loadedCompanies = try decoder.decode([Company].self, from: companiesData)
 
                 // Pre-compute company matching
