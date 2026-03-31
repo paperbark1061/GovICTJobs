@@ -9,12 +9,16 @@ struct Opportunity: Identifiable, Codable {
     let closing: String
     let module: String
     let category: String
-    let matchingCompanyIds: [String]
     let buyictURL: String?
+
+    /// The effective BuyICT URL - uses the direct link if available, otherwise the general listing page
+    var effectiveBuyictURL: String {
+        buyictURL ?? "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
+    }
 
     enum CodingKeys: String, CodingKey {
         case id, title, buyer, arrangement, location, closing, module, category
-        case matchingCompanyIds, buyictURL
+        case buyictURL
     }
 
     var skills: [String] {
