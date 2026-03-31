@@ -17,6 +17,7 @@
 		A10000010000000000000008 /* CompanyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000008 /* CompanyListView.swift */; };
 		A10000010000000000000009 /* opportunities.json in Resources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000009 /* opportunities.json */; };
 		A1000001000000000000000A /* companies.json in Resources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000C /* companies.json */; };
+		A1000001000000000000000B /* opportunities2.json in Resources */ = {isa = PBXBuildFile; fileRef = A2000001000000000000000D /* opportunities2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A2000001000000000000000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2000001000000000000000B /* GovICTJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GovICTJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2000001000000000000000C /* companies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = companies.json; sourceTree = "<group>"; };
+		A2000001000000000000000D /* opportunities2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = opportunities2.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A20000010000000000000009 /* opportunities.json */,
 				A2000001000000000000000C /* companies.json */,
+				A2000001000000000000000D /* opportunities2.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				A10000010000000000000009 /* opportunities.json in Resources */,
 				A1000001000000000000000A /* companies.json in Resources */,
+				A1000001000000000000000B /* opportunities2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
