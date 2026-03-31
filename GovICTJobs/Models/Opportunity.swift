@@ -11,6 +11,31 @@ struct Opportunity: Identifiable, Codable {
     let category: String
     let buyictURL: String?
 
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(String.self, forKey: .id)
+        title = try container.decode(String.self, forKey: .title)
+        buyer = try container.decode(String.self, forKey: .buyer)
+        arrangement = try container.decodeIfPresent(String.self, forKey: .arrangement) ?? ""
+        location = try container.decodeIfPresent(String.self, forKey: .location) ?? ""
+        closing = try container.decode(String.self, forKey: .closing)
+        module = try container.decodeIfPresent(String.self, forKey: .module) ?? ""
+        category = try container.decodeIfPresent(String.self, forKey: .category) ?? ""
+        buyictURL = try container.decodeIfPresent(String.self, forKey: .buyictURL)
+    }
+
+    init(id: String, title: String, buyer: String, arrangement: String, location: String, closing: String, module: String, category: String, buyictURL: String? = nil) {
+        self.id = id
+        self.title = title
+        self.buyer = buyer
+        self.arrangement = arrangement
+        self.location = location
+        self.closing = closing
+        self.module = module
+        self.category = category
+        self.buyictURL = buyictURL
+    }
+
     /// The effective BuyICT URL - uses the direct link if available, otherwise the general listing page
     var effectiveBuyictURL: String {
         buyictURL ?? "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
