@@ -1,90 +1,12 @@
 [
-  {
-    "title": "1 Infrastructure Engineer",
-    "id": "LH-05460",
-    "buyer": "Australian Electoral Commission",
-    "arrangement": "Hybrid",
-    "location": "ACT",
-    "closing": "8 April 2026",
-    "module": "ICT Labour Hire",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=c7d3fbfd97ae7610c3473d56f053af54&entry=opp_page"
-  },
-  {
-    "title": "1 Senior Mobile Application developer",
-    "id": "LH-06053",
-    "buyer": "Department of Health, Disability and Ageing",
-    "arrangement": "Hybrid",
-    "location": "QLD, WA, ACT, VIC, NSW, NT, SA, TAS",
-    "closing": "8 April 2026",
-    "module": "ICT Labour Hire",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=f362bdba97733a100da63ba6f053af36&entry=opp_page"
-  },
-  {
-    "title": "1 Senior Seibel Developer",
-    "id": "LH-06051",
-    "buyer": "Department of Health, Disability and Ageing",
-    "arrangement": "Hybrid",
-    "location": "QLD, WA, ACT, VIC, NSW, NT, SA, TAS",
-    "closing": "8 April 2026",
-    "module": "ICT Labour Hire",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=1480f1f697733a100da63ba6f053af55&entry=opp_page"
-  },
-  {
-    "title": "3 Senior Security Specialist Cyber Advisors",
-    "id": "LH-05508",
-    "buyer": "Australian Electoral Commission",
-    "arrangement": "Hybrid",
-    "location": "QLD, WA, ACT, VIC, NSW, SA, TAS",
-    "closing": "8 April 2026",
-    "module": "ICT Labour Hire",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=76344e7f932eb650dbc7f37e1dba108e&entry=opp_page"
-  },
-  {
-    "title": "1 Senior Oracle FMW Developer",
-    "id": "LH-06054",
-    "buyer": "Department of Health, Disability and Ageing",
-    "arrangement": "Hybrid",
-    "location": "QLD, WA, ACT, VIC, NSW, NT, SA, TAS",
-    "closing": "8 April 2026",
-    "module": "ICT Labour Hire",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
-  },
-  {
-    "title": "MST26-007-Enterprise Assurance Model",
-    "id": "PCS-03702",
-    "buyer": "Services Australia",
-    "arrangement": "Hybrid",
-    "location": "QLD, ACT, VIC",
-    "closing": "15 April 2026",
-    "module": "Professional and Consulting Services",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
-  },
-  {
-    "title": "1 Testing Enterprise Architect",
-    "id": "LH-06069",
-    "buyer": "Australian Digital Health Agency",
-    "arrangement": "Hybrid",
-    "location": "QLD, ACT, NSW",
-    "closing": "8 April 2026",
-    "module": "ICT Labour Hire",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
-  },
-  {
-    "title": "1 Digital Content Manager",
-    "id": "LH-05965",
-    "buyer": "Department of Health, Disability and Ageing",
-    "arrangement": "Remote",
-    "location": "",
-    "closing": "7 April 2026",
-    "module": "ICT Labour Hire",
-    "category": "",
-    "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"
-  }
+  {"title": "1 Infrastructure Engineer", "id": "LH-05460", "buyer": "Australian Electoral Commission", "arrangement": "Hybrid", "location": "ACT", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=c7d3fbfd97ae7610c3473d56f053af54&entry=opp_page"},
+  {"title": "1 Senior Mobile Application developer", "id": "LH-06053", "buyer": "Department of Health, Disability and Ageing", "arrangement": "Hybrid", "location": "QLD, WA, ACT, VIC, NSW, NT, SA, TAS", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=f362bdba97733a100da63ba6f053af36&entry=opp_page"},
+  {"title": "1 Senior Seibel Developer", "id": "LH-06051", "buyer": "Department of Health, Disability and Ageing", "arrangement": "Hybrid", "location": "QLD, WA, ACT, VIC, NSW, NT, SA, TAS", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=1480f1f697733a100da63ba6f053af55&entry=opp_page"},
+  {"title": "3 Senior Security Specialist Cyber Advisors", "id": "LH-05508", "buyer": "Australian Electoral Commission", "arrangement": "Hybrid", "location": "QLD, WA, ACT, VIC, NSW, SA, TAS", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/public?id=opportunity_details&table=u_lh_procurement&sys_id=76344e7f932eb650dbc7f37e1dba108e&entry=opp_page"},
+  {"title": "1 Senior Oracle FMW Developer", "id": "LH-06054", "buyer": "Department of Health, Disability and Ageing", "arrangement": "Hybrid", "location": "QLD, WA, ACT, VIC, NSW, NT, SA, TAS", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"},
+  {"title": "MST26-007-Enterprise Assurance Model", "id": "PCS-03702", "buyer": "Services Australia", "arrangement": "Hybrid", "location": "QLD, ACT, VIC", "closing": "15 April 2026", "module": "Professional and Consulting Services", "category": "", "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"},
+  {"title": "1 Testing Enterprise Architect", "id": "LH-06069", "buyer": "Australian Digital Health Agency", "arrangement": "Hybrid", "location": "QLD, ACT, NSW", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"},
+  {"title": "1 Digital Content Manager", "id": "LH-05965", "buyer": "Department of Health, Disability and Ageing", "arrangement": "Remote", "location": "", "closing": "7 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"},
+  {"title": "1 Senior Learning and Development Consultant", "id": "LH-06055", "buyer": "Department of Health, Disability and Ageing", "arrangement": "Hybrid", "location": "QLD, WA, ACT, VIC, NSW, NT, SA, TAS", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"},
+  {"title": "1 Solution Architect", "id": "LH-06070", "buyer": "Australian Digital Health Agency", "arrangement": "Hybrid", "location": "QLD, ACT, NSW", "closing": "8 April 2026", "module": "ICT Labour Hire", "category": "", "buyictURL": "https://www.buyict.gov.au/sp?id=procurement_702702702&topic_id=292278ac1bf62a50f421db96b04bcbd5"}
 ]
