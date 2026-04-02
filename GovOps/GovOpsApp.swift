@@ -1,13 +1,15 @@
 import SwiftUI
 
 @main
-struct GovOpsApp: App {
+struct GovICTJobsApp: App {
     @StateObject private var dataService = DataService.shared
+    @StateObject private var authService = AuthService.shared
 
     var body: some Scene {
         WindowGroup {
-            JobListView()
+            SplashView()
                 .environmentObject(dataService)
+                .environmentObject(authService)
         }
     }
 }
