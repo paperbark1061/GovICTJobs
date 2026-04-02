@@ -17,6 +17,7 @@ struct JobListView: View {
                     VStack(spacing: 16) {
                         ProgressView()
                             .scaleEffect(1.5)
+
                         Text("Loading opportunities...")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
@@ -28,12 +29,15 @@ struct JobListView: View {
                         Image(systemName: "exclamationmark.triangle")
                             .font(.system(size: 48))
                             .foregroundColor(.red)
+
                         Text("Error Loading Data")
                             .font(.headline)
+
                         Text(errorMessage)
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
+
                         Button(action: { dataService.refreshData() }) {
                             HStack {
                                 Image(systemName: "arrow.clockwise")
@@ -54,14 +58,17 @@ struct JobListView: View {
                         Image(systemName: "briefcase")
                             .font(.system(size: 48))
                             .foregroundColor(.gray)
+
                         Text(filters.hasActiveFilters ? "No Opportunities Match" : "No Opportunities Found")
                             .font(.headline)
+
                         Text(filters.hasActiveFilters ?
                             "Try adjusting your filters to see more results." :
                             "Opportunities will appear here when data is available.")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
+
                         if filters.hasActiveFilters {
                             Button(action: resetFilters) {
                                 HStack {
@@ -105,10 +112,12 @@ struct JobListView: View {
                             Image(systemName: "building.2")
                                 .foregroundColor(.blue)
                         }
+
                         Button(action: { isFilterSheetPresented = true }) {
                             HStack(spacing: 4) {
                                 Image(systemName: "line.3.horizontal.decrease.circle")
                                     .foregroundColor(.blue)
+
                                 if filters.hasActiveFilters {
                                     Circle()
                                         .fill(Color.red)
@@ -135,10 +144,14 @@ struct JobListRow: View {
 
     var moduleColor: Color {
         switch opportunity.module.lowercased() {
-        case let m where m.contains("labour"): return .blue
-        case let m where m.contains("professional"): return .green
-        case let m where m.contains("rfi"): return .orange
-        default: return .gray
+        case let m where m.contains("labour"):
+            return .blue
+        case let m where m.contains("professional"):
+            return .green
+        case let m where m.contains("rfi"):
+            return .orange
+        default:
+            return .gray
         }
     }
 
@@ -149,11 +162,14 @@ struct JobListRow: View {
                     Text(opportunity.title)
                         .font(.headline)
                         .lineLimit(2)
+
                     Text(opportunity.buyer)
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
+
                 Spacer()
+
                 VStack(alignment: .trailing, spacing: 4) {
                     Text(opportunity.module)
                         .font(.caption2)
@@ -163,20 +179,25 @@ struct JobListRow: View {
                         .background(moduleColor.opacity(0.2))
                         .foregroundColor(moduleColor)
                         .cornerRadius(4)
+
                     Text(opportunity.location)
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
             }
+
             HStack(spacing: 12) {
                 Label(opportunity.arrangement, systemImage: "building")
                     .font(.caption)
                     .foregroundColor(.secondary)
+
                 Spacer()
+
                 Text("Closes: \(opportunity.closing)")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
+
             if !opportunity.skills.isEmpty {
                 HStack(spacing: 6) {
                     ForEach(opportunity.skills.prefix(3), id: \.self) { skill in
@@ -188,11 +209,13 @@ struct JobListRow: View {
                             .foregroundColor(.blue)
                             .cornerRadius(4)
                     }
+
                     if opportunity.skills.count > 3 {
                         Text("+\(opportunity.skills.count - 3)")
                             .font(.caption2)
                             .foregroundColor(.secondary)
                     }
+
                     Spacer()
                 }
             }
